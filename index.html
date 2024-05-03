@@ -1,18 +1,29 @@
 <html>
     <style>
-        h1 {text-align: center;}
+        html {background-color: #999999;}
+        h1 {text-align: center; color: #000000;}
         p {text-align: center;}
         div {text-align: center;}
-        img {max-height: 90%; max-width: 90%;}
+        img {max-height: 70%; max-width: 70%; margin: 10px 10px 10px 10px;}
 
 
     </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+    <script>
+    function PlayMusic() {
+        var play=document.getElementById("music");
+        play.play();
+    }
+    $(document).ready(function(){
+        setTimeout(PlayMusic,3000);
+    })
+    </script>
     <div>
         <title>Graduation Cap Website</title>
         <p>
             <h1>Welcome to my "website"</h1>
+            
             <!--<audio src="assets/Rickroll.mp3"></audio>-->
-            <img src="assets/1.jpg" alt="First Day on Campus">
             <img src="assets/2.jpg" alt="First Birthday on Campus">
             <img src="assets/3.jpg" alt="Picklefest">
             <img src="assets/4.jpg" alt="CSO Halloween">
@@ -64,25 +75,10 @@
             <img src="assets/53.jpg" alt="Heathers Our Love is God">
             <img src="assets/54.jpg" alt="Heathers Seniors">
             <img src="assets/55.jpg" alt="Friendship">
+            <audio controls id="music" >
+                <source src="assets/Rickroll.mp3" type="audio/mpeg">
+            </audio>
         </p>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
-    <script>
-    function PlayMusic() {
-        var play=document.getElementById("music");
-        play.play();
-    }
-
-    $(document).ready(function(){
-        setTimeout(PlayMusic,3000);
-    })
-
-    </script>
     </head>
-    <body>
-
-    <audio controls id="music" >
-
-    <source src="assets/Rickroll.mp3" type="audio/mpeg">
-    </audio>
 </html>
